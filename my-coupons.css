@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #eef2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/* Mobile Frame Container */
+
+.mobile-container {
+    width: 100%;
+    max-width: 380px;
+    height: 780px;
+    background-color: #ffffff;
+    border-radius: 28px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Top Bar */
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 20px 16px 20px;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.back-btn {
+    font-size: 16px;
+    color: #1f2937;
+    cursor: pointer;
+}
+
+.top-bar h2 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #111827;
+}
+
+
+/* Main Content */
+
+.content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px 16px;
+}
+
+
+/* Coupon Cards Container */
+
+.coupon-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+
+/* Coupon Card Styling (Ticket Look) */
+
+.coupon-card {
+    display: flex;
+    align-items: center;
+    background-color: #f9fafb;
+    border: 1px solid #eceff1;
+    border-radius: 10px;
+    padding: 14px 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.coupon-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Left side of coupon */
+
+.coupon-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 55px;
+}
+
+.discount-percent {
+    font-size: 17px;
+    font-weight: 800;
+    color: #111827;
+    line-height: 1.1;
+}
+
+.discount-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #6b7280;
+}
+
+
+/* Dashed divider between left and right */
+
+.dashed-divider {
+    width: 1px;
+    height: 38px;
+    border-left: 1.5px dashed #d1d5db;
+    margin: 0 16px;
+}
+
+
+/* Right side of coupon */
+
+.coupon-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+}
+
+.category-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: #374151;
+}
+
+.coupon-desc {
+    font-size: 11.5px;
+    color: #6b7280;
+    line-height: 1.3;
+}
+
+
+/* Section Heading */
+
+.section-title {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+
+/* Banner Slider */
+
+.banner-slider {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.banner-slider::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+}
+
+
+/* Banner Card / Photo Placeholder */
+
+.banner-card {
+    flex: 0 0 85%;
+    height: 120px;
+    background-color: #fef3c7;
+    /* Subtle placeholder tone matching the UI */
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #fde68a;
+    position: relative;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}

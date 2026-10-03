@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile UI</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="profile.css" />
+</head>
+
+<body>
+
+    <div class="mobile-container">
+        <!-- Top Header -->
+        <header class="top-bar">
+            <i class="fa-solid fa-chevron-left"></i>
+            <h2>Profile</h2>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="content">
+            <!-- User Profile Card -->
+            <section class="user-card">
+                <div class="user-info-left">
+                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=120" alt="Avatar" class="avatar" />
+                    <div class="user-details">
+                        <h3>Thomas Djono</h3>
+                        <span>ID 00123141</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-pen edit-icon"></i>
+            </section>
+
+            <!-- Quick Action Grid -->
+            <section class="action-grid">
+                <div class="grid-card">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>Order</span>
+                </div>
+                <div class="grid-card">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>Wishlist</span>
+                </div>
+                <div class="grid-card">
+                    <i class="fa-solid fa-gift"></i>
+                    <span>Coupons</span>
+                </div>
+                <div class="grid-card">
+                    <i class="fa-solid fa-headset"></i>
+                    <span>Help Center</span>
+                </div>
+            </section>
+
+            <!-- Account Settings -->
+            <h4 class="section-title">Account Settings</h4>
+            <ul class="settings-list">
+                <li class="setting-item">
+                    <div class="setting-item-left">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Edit Profile</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </li>
+                <li class="setting-item">
+                    <div class="setting-item-left">
+                        <i class="fa-regular fa-compass"></i>
+                        <span>Saved Addresses</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </li>
+                <li class="setting-item">
+                    <div class="setting-item-left">
+                        <i class="fa-solid fa-font"></i>
+                        <span>Select Language</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </li>
+                <li class="setting-item">
+                    <div class="setting-item-left">
+                        <i class="fa-regular fa-bell"></i>
+                        <span>Notification Setting</span>
+                    </div>
+                    <div class="setting-item-right">
+                        <span class="badge">01</span>
+                        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </div>
+                </li>
+                <li class="setting-item">
+                    <div class="setting-item-left">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <span>Log Out</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </li>
+            </ul>
+        </main>
+
+        <!-- Bottom Navigation Bar -->
+        <nav class="bottom-nav">
+            <div class="nav-item">
+                <i class="fa-regular fa-compass"></i>
+                <span>Home</span>
+            </div>
+            <div class="nav-item">
+                <i class="fa-regular fa-comment-dots"></i>
+                <span>Categories</span>
+            </div>
+            <div class="center-btn">
+                <i class="fa-regular fa-clone"></i>
+            </div>
+            <div class="nav-item">
+                <i class="fa-regular fa-heart"></i>
+                <span>Wishlist</span>
+            </div>
+            <div class="nav-item active">
+                <i class="fa-regular fa-user"></i>
+                <span>Profile</span>
+            </div>
+        </nav>
+    </div>
+
+</body>
+
+</html>

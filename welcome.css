@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 320px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    font-family: Arail;
+    margin: 0;
+}
+
+.welcome img {
+    width: 220px;
+    height: 300px;
+    object-fit: cover;
+    padding: 10px;
+    gap: 10px;
+}
+
+.welcome-description {
+    font-size: 14px;
+    color: gray;
+    text-align: center;
+    line-height: 1.5;
+    margin: 10px 15px;
+}
+
+.welcome-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #0D775E;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    width: 320px;
+    height: 40px;
+    margin-top: 15px;
+    display: block;
+    margin: auto;
+}

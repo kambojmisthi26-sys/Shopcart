@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.mobile-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding-bottom: 85px;
+}
+
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    background-color: #ffffff;
+}
+
+.header h2 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #222;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #222;
+}
+
+
+/* Categories List */
+
+.categories-list {
+    padding: 10px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+/* Category Cards */
+
+.category-card {
+    height: 130px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+
+.card-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+}
+
+.card-content p {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.shop-btn {
+    display: inline-block;
+    background-color: #0b735f;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 4px;
+    width: fit-content;
+}
+
+.card-image {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    height: 100%;
+    width: 140px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.card-image img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+
+/* Card Background Themes */
+
+.card-yellow {
+    background-color: #f6d194;
+}
+
+.card-pink {
+    background-color: #f7b2c0;
+}
+
+.card-white {
+    background-color: #f8f9fa;
+    border: 1px solid #eee;
+}
+
+.card-cyan {
+    background-color: #9fe2dc;
+}
+
+.card-gold {
+    background-color: #e5ca5e;
+}
+
+
+/* Bottom Navigation */
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 400px;
+    height: 65px;
+    background-color: #ffffff;
+    border-top: 1px solid #ebebeb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #9e9e9e;
+    font-size: 10px;
+    gap: 4px;
+}
+
+.nav-item i {
+    font-size: 18px;
+}
+
+.nav-item.active {
+    color: #0b735f;
+}
+
+
+/* Floating Center Button */
+
+.floating-btn-wrapper {
+    position: relative;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.floating-center-btn {
+    position: absolute;
+    top: -30px;
+    width: 46px;
+    height: 46px;
+    background-color: #1a3249;
+    border: none;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

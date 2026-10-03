@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orders</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="orders.css" />
+</head>
+
+<body>
+
+    <div class="mobile-container">
+        <!-- Top Header -->
+        <header class="top-bar">
+            <div class="header-left">
+                <i class="fa-solid fa-chevron-left back-btn"></i>
+                <h2>Orders</h2>
+            </div>
+            <i class="fa-solid fa-magnifying-glass search-btn"></i>
+        </header>
+
+        <!-- Tabs Navigation -->
+        <nav class="order-tabs">
+            <button class="tab-item active">All</button>
+            <button class="tab-item">On Delivery</button>
+            <button class="tab-item">Completed</button>
+            <button class="tab-item">Canceled</button>
+        </nav>
+
+        <!-- Order Items List -->
+        <main class="content">
+            <!-- Order Card 1: Completed -->
+            <article class="order-card">
+                <div class="card-top">
+                    <div class="product-info">
+                        <span class="order-id">#12451245</span>
+                        <h3 class="product-name">Men's Cotton Blend Casual Shirt</h3>
+                        <span class="variant">GREY Variant</span>
+                    </div>
+                    <div class="product-visual">
+                        <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=100" alt="Casual Shirt" class="item-thumb" />
+                        <div class="price-qty">
+                            <span class="qty">1x</span>
+                            <span class="price">₹499</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-bottom">
+                    <span class="status-badge status-completed">Completed</span>
+                    <span class="status-desc">Order Received by [Customer]</span>
+                </div>
+            </article>
+
+            <!-- Order Card 2: Canceled -->
+            <article class="order-card">
+                <div class="card-top">
+                    <div class="product-info">
+                        <span class="order-id">#12451245</span>
+                        <h3 class="product-name">F1 Vintage Racing Varsity Bomber Jacket</h3>
+                        <span class="variant">GREY Variant</span>
+                    </div>
+                    <div class="product-visual">
+                        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=100" alt="Bomber Jacket" class="item-thumb" />
+                        <div class="price-qty">
+                            <span class="qty">2x</span>
+                            <span class="price">₹1499</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-bottom">
+                    <span class="status-badge status-canceled">Canceled</span>
+                    <span class="status-desc">Reason: Payment Not Paid</span>
+                </div>
+            </article>
+
+            <!-- Order Card 3: On Delivery -->
+            <article class="order-card">
+                <div class="card-top">
+                    <div class="product-info">
+                        <span class="order-id">#12451245</span>
+                        <h3 class="product-name">F1 Vintage Racing Varsity Bomber Jacket</h3>
+                        <span class="variant">GREY Variant</span>
+                    </div>
+                    <div class="product-visual">
+                        <img src="https://images.unsplash.com/photo-1544441893-675973e31985?w=100" alt="Bomber Jacket" class="item-thumb" />
+                        <div class="price-qty">
+                            <span class="qty">1x</span>
+                            <span class="price">₹1499</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-bottom">
+                    <span class="status-badge status-delivery">On Delivery</span>
+                    <span class="status-desc">On the way to your City [Track]</span>
+                </div>
+            </article>
+        </main>
+    </div>
+
+</body>
+
+</html>

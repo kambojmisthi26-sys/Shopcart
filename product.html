@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="product.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="mobile-container">
+        <!-- Header -->
+        <header class="header">
+            <button class="icon-btn"><i class="fa-solid fa-chevron-left"></i></button>
+            <h2>Product Detail</h2>
+            <button class="icon-btn"><i class="fa-regular fa-heart"></i></button>
+        </header>
+
+        <!-- Main Image Section -->
+        <div class="main-image-container">
+            <img src="image/image 3.png" alt="Main Product Image" class="main-image" id="mainImg">
+
+            <!-- Thumbnail Gallery -->
+            <div class="thumbnails">
+                <img src="image/image 3.png" alt="Thumb 1" class="thumb active">
+                <img src="image/image 4.png" alt="Thumb 2" class="thumb">
+                <img src="image/image 4 (3).png" alt="Thumb 3" class="thumb">
+                <img src="image/image 4 (2).png" alt="Thumb 4" class="thumb">
+            </div>
+        </div>
+
+        <!-- Product Details Content -->
+        <div class="product-info">
+            <span class="category-tag">Kurta Set</span>
+            <h1 class="product-title">Elegant Embroidered Anarkali Set with Organza Dupatta</h1>
+
+            <div class="price-rating-row">
+                <div class="price-box">
+                    <span class="current-price">₹1,899</span>
+                    <span class="original-price">₹3,799</span>
+                </div>
+                <div class="rating-box">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.5</span>
+                    <span class="reviews-count">(2.5k reviews)</span>
+                </div>
+            </div>
+
+            <!-- Size Selection -->
+            <div class="option-row">
+                <span class="option-label">Size:</span>
+                <div class="size-options">
+                    <button class="size-btn active">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+            </div>
+
+            <!-- Color Selection -->
+            <div class="option-row">
+                <span class="option-label">Color:</span>
+                <div class="color-options">
+                    <span class="color-dot color-1 active"></span>
+                    <span class="color-dot color-2"></span>
+                    <span class="color-dot color-3"></span>
+                    <span class="color-dot color-4"></span>
+                </div>
+            </div>
+
+            <!-- Product Description / Details -->
+            <div class="details-section">
+                <h3>Product details</h3>
+                <p class="highlight-title">Top highlights:</p>
+                <p class="detail-text"><strong>Material composition:</strong> Pure Silk Blend, Organza Dupatta</p>
+            </div>
+        </div>
+
+        <!-- Bottom Sticky Bar -->
+        <div class="bottom-bar">
+            <div class="bottom-price">
+                <span class="price-label">Price</span>
+                <span class="final-price">₹1,899</span>
+            </div>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
